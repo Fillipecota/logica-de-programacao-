@@ -116,7 +116,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI Emoji" size="36" style="3"/>
+          <Font name="Siemens Sans Black" size="36" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="CALCULADORA"/>
       </Properties>

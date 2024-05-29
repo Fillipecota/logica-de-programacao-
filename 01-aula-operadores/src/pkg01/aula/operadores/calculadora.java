@@ -48,7 +48,7 @@ public class calculadora extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
         jLabel2.setText("RESULTADO:");
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Emoji", 3, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Siemens Sans Black", 3, 36)); // NOI18N
         jLabel3.setText("CALCULADORA");
 
         jButton1.setFont(new java.awt.Font("Segoe UI Historic", 1, 18)); // NOI18N
@@ -116,7 +116,22 @@ public class calculadora extends javax.swing.JFrame {
         double NumeroUm = Double.parseDouble(this.PrimeiroNumero.getText());
         double NumeroDois = Double.parseDouble(this.SegundoNumero.getText());
        String op = this.Operacao.getSelectedItem().toString();
-        this.Resultado.setText("chegou aqui");
+       
+       double result = 0.0;
+               
+       if ( op =="+"){
+           result = NumeroUm + NumeroDois;   
+           
+       } else if (op == "-"){
+           result = NumeroUm - NumeroDois;
+           
+       } else if (op == "*"){
+          result = NumeroUm * NumeroDois;
+          
+       } else{
+           result = NumeroUm / NumeroDois;
+       }        
+        this.Resultado.setText(String.format("%.0f", result));
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
