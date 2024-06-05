@@ -16,7 +16,8 @@ public class Exercicios {
                
                //String NumeroDois = JOptionPane.showInputDialog("Digite Número");
               // JOptionPane.showConfirmDialog(null,"Valor é tal");
-        
+            
+              System.out.println("escreva um numero");
              int numero = leia.nextInt();
              
             numero--;
