@@ -51,3 +51,33 @@ var nume = leia.questionInt("DIGITE UM NUMERO: ")
 for(var i = 1; i <= 10; i++ ){
 console.log(nume + " x " + i + " = " + nume * i )
 }
+
+
+// diferença while e do while
+
+var a = 0
+
+while ( a <= 10) {
+    console.log(a)
+    a++
+}
+
+var b = 0
+
+do {
+    console.log(b)
+    b++
+} while (a < 10);
+
+var n1 =leia.questionInt("DIGITE O PRIMEIRO NUMERO: ")
+var n1 = leia.questionInt("DIGITE O SEGUNDO NUMERO: ")
+var passo = leia.questionInt("NUMERO DE PASSOS: ")
+
+while (n1 <= n2) {
+    console.log(n1)
+    n1+= passo
+}
+
+for ( var i = n1; i <= n2; i += passo){
+    console.log(i)
+}
