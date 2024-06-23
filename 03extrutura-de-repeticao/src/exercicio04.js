@@ -7,12 +7,17 @@ var numeroMenor
 do { 
   var numero = leia.questionInt("DIGITE UM NUMERO: ")
 
+    if (vezes === 0){
+      
+      numeroMaior = numero
+      numeroMenor = numero
+    }
 
-    if (numero <= numeroMaior){
-
+    if (numero >= numeroMaior){
+      numeroMaior = numero
   }
-    if ( numero >= numeroMenor){
-       
+    if ( numero <= numeroMenor){
+       numeroMenor = numero
    }
    vezes ++
 } while (vezes <= 5);

@@ -1,10 +1,14 @@
-import leia from"readline-sync"    
+import leia from "readline-sync"
 
-var inicio = 1000
-var final = 1999
+var n1 = leia.questionInt("digite primeiro numero: ");
+var n2 = leia.questionInt("digite segundo numero: ");
+var passo = leia.questionInt("numero de passos");
 
+while(n1 <= n2){
+    console.log(n1);
+    n1+= passo;
+}
 
-while (1000 % 11 === 5 <= final) {
-    console.log(inicio)
-    
+for(var i = n1; i<= n2; i += passo){
+    console.log(i);
 }
