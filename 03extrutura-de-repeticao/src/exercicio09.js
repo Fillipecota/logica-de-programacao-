@@ -1,12 +1,18 @@
 import leia from "readline-sync"
 
-var num
-var vez 
 
-for (var i = vez; num >= 100 || num <= 200; i ++){
-    nu
+var vez = 0 
+var inf = 0
+
+
+while (inf === 0) {
+    var num = leia.questionInt("DIGITE UM NUMERO: ")
+
+    if ( num > 100 || num < 200)
+    vez ++
+console.log("tem: " +vez + " numero")
+    
 }
-
 
 
 

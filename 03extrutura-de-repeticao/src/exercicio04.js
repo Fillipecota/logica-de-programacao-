@@ -20,7 +20,7 @@ do {
        numeroMenor = numero
    }
    vezes ++
-} while (vezes <= 5);
+} while (vezes <= 15);
 console.log("NUMERO MAIOR: " + numeroMaior)
 console.log("NUMERO MENOR: " + numeroMenor)
    
