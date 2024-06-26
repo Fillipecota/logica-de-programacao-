@@ -11,6 +11,8 @@ while(alturaDela >= alturaDele){
     tempo ++
 
 }
+console.log("Valentina estara: " + alturaDela.toFixed(2))
+console.log("Jaoa estara: " + alturaDele.toFixed(2))
 console.log(tempo + " anos ")
 
 

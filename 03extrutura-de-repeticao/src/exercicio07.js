@@ -9,3 +9,14 @@ for (var num = 10; num <= 1000; num++){
         console.log( num)
     }
 }
+
+
+// var cont = 10
+
+// while (cont) {
+//     if(cont === 501){
+//     cont = 900
+// }
+// console.log(cont)
+// cont++
+// }

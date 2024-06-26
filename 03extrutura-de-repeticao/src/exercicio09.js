@@ -2,17 +2,27 @@ import leia from "readline-sync"
 
 
 var vez = 0 
-var inf = 0
 
 
-while (inf === 0) {
+
+while (num !== 0) {
     var num = leia.questionInt("DIGITE UM NUMERO: ")
-
-    if ( num > 100 || num < 200)
-    vez ++
-console.log("tem: " +vez + " numero")
     
+    if ( num > 100 && num < 200)
+    vez ++
 }
+console.log("tem: " +vez + " numero")
+
+// var contador
+// do {
+//     var numm = leia.questionInt("DIGITE UM NUMERO: ")
+//     if (numm > 100 && numm < 200){
+//         contador++
+//     }
+// } while (numm !==0 );
+// console.log("FORAM DIGITADO" + contador + "NUMERO (S) ENTRE 100 E 200")
+    
+
 
 
 
