@@ -17,8 +17,3 @@ console.log(binario)
 
 
 
-// do {
-//     binario = decimal % 2
-
-// } while (binario === 0|| binario === 1);
-//     console.log( binario)

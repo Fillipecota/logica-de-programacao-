@@ -13,6 +13,14 @@ while (num !== 0) {
 }
 console.log("tem: " +vez + " numero")
 
+
+
+
+
+
+
+
+
 // var contador
 // do {
 //     var numm = leia.questionInt("DIGITE UM NUMERO: ")
@@ -24,17 +32,7 @@ console.log("tem: " +vez + " numero")
     
 
 
-
-
-
-
-
-
-
-
-
-
-
+//--------------------------------------------------------------
 
 
 
