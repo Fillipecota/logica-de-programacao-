@@ -1,7 +1,36 @@
 import leia from "readline-sync"
 
-var aluno1 , aluno2 , aluno3 
-var not1 , not2 , not3  
+var cont= 0
+var notaMedia = 0;
+var mediaturma = 0;
+var melhorestudante = 0;
+var nomemelhorestudante;
+
+
+for(var i = 0; i < 2; i++){
+    var Nome = leia.question("INFORME O NOME: ");        
+    for(var e = 0; e < 3; e++){
+        var nota = leia.questionFloat("INFORME A " + e + "  NOTA: ")
+        notaMedia += nota;
+        cont++
+    }        
+    mediaturma += notaMedia;
+    console.log(mediaturma)
+    var notaM = notaMedia / 3
+    notaMedia = 0;
+    if(i === 0){
+        melhorestudante = notaM
+        nomemelhorestudante = Nome;
+    }
+    if(melhorestudante < notaM){
+        melhorestudante = notaM
+        nomemelhorestudante = Nome;
+    }
+}
+console.log("MEDIA DA TURMA: " + (mediaturma / cont).toFixed(2));
+console.log("MELHOR ESTUDANTE: " + nomemelhorestudante);
+console.log("MEDIA: " + melhorestudante.toFixed(2));
+
 
 
 
