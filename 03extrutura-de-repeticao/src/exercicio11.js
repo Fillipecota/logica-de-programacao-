@@ -60,11 +60,11 @@ if ( populacao === 0){
             
         
        
-}while (vezes < 3)
+}while (vezes <=10)
 
     
-    mediaAltPopul =  geral/2
-    percHome = quantH *( 100/2)
+    mediaAltPopul =  geral/10
+    percHome = quantH *( 100/10)
     medMulhAltura = geralM/quantM
 
     console.log( "Altura maior É: " + alturaMaior+ "\n" + "Altura menor É: " + alturaMenor)
