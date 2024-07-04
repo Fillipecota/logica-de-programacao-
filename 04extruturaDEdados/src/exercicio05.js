@@ -25,13 +25,15 @@ console.log(lista)
 
 //modo de inverter lista
 
-var inicio = 0
-var fim = lista.length -1
-while(inicio < fim){
-    var aux = lista[inicio];
-    lista[inicio]= lista[fim];
-    lista[fim] = aux;
-}
-
+// var inicio = 0
+// var fim = lista.length -1
+// while(inicio < fim){
+//     var aux = lista[inicio];
+//     lista[inicio]= lista[fim];
+//     lista[fim] = aux;
+//  inicio ++;
+// fim --; 
+// }
+// console.log(lista)
 
 //----------------------------------------------------
