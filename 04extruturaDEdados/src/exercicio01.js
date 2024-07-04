@@ -7,7 +7,7 @@ for(var i = 0; i < 10; i++){
     lista[i]= leia.question("DIGITE UM NUMERO: ")
 }
 for ( var j = 0 ; j < lista.length ; j++){
-  lista2[j] = lista[j]* 5
+  lista2[j] = lista[j] * 5
     
 }
 

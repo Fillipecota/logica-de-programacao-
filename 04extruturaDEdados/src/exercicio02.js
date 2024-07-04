@@ -1,12 +1,11 @@
 import leia from "readline-sync"
 
 var lista = []
-var lista02 = []
+var lista02 = 0
 
 for(var i = 0; i < 5; i++){
-    lista[i] =leia.question("DIGITE UM NUMERO: " )
+    lista[i] =leia.questionInt("DIGITE UM NUMERO: " )
+    lista02 = lista02 + lista[i] 
 }
 
-for(var j = 0; j < 5; j++){
-    lista02 = lista02 + lista[j]
-}
+console.log( lista02)
