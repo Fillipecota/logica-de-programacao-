@@ -1,76 +1,32 @@
 import leia from "readline-sync"
 
-var numeroExercicio = leia.keyInSelect(1-exercicio01, 2-exercicio02)
+export function exercicio02(){
 
-switch (numeroExercicio) {
-    case 1:
-        exercicio01()        
-        break;
-    case 2:
-        exercicio02()
-        break
-    default:
-        break;
-}
-
-
-    function exercicio01() {
-
-        var numero = []
-        var numMulti= []
-      
-        adcNumero()
-         forMult()
-         console.log()
-
-    }
-
-
-    function exercicio02(){
-       
-        var numero = []
-        var numero2 = 0
-        adcNumero()
-        soma()
-        console.log(soma)
-        
-        
-
-
-
-        
-        
-    }
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-    function adcNumero(){
-     var x =leia.questionInt("DIGITE UM VALOR A CIMA QUE A REPETIÇÃO DEVE PARAR: ")
-         for(var i = o; i< x; i++){
-         numero = leia.questionInt("DIGITE UM NUMERO: ")
+    function preencherVetor(tamanhoVetor,min, max){
+        var vetor = [];
+        for(var i=0; i< tamanhoVetor; i++){
+            vetor[i] =  parseInt(Math.random()* (max - min)) + min
         }
+        return vetor;
     }
 
-    function forMult(){
-     var x =leia.questionInt("DIGITE UM VALOR A CIMA QUE A REPETIÇÃO DEVE PARAR: ")
-     var z = leia.questionInt("DIGITE POR QUANTO QUER MULTIPLICAR: ")      
-         for(var i = 0; i<x; i++){
-         numMulti[i] = numero[i]*z  
+    function obterItensVetor(vetor,vResultado,min,max){
+        for(i=min; i<= max;i++){
+        vResultado[i] = vetor[i];
+        }
+        return vResultado;
     }
+    var v1 = preencherVetor(9, 0, 100);
+    var v2 = preencherVetor(9, 0, 100);
+    var v3 = preencherVetor(9, 0, 100);
 
-    }
+    var vResultado = []
+    vResultado = obterItensVetor(v1, vResultado, 0, 2);
+    vResultado = obterItensVetor(v2, vResultado, 3, 5);
+    vResultado = obterItensVetor(v3, vResultado, 6, 8);
 
-    function soma(){
-    var x =leia.questionInt("DIGITE UM VALOR A CIMA QUE A REPETIÇÃO DEVE PARAR: ")
-         for(var i = 0; i < x; i++){
-         numero2 = numero[i] + numero2
-         }
+    console.log(v1)
+    console.log(v2)
+    console.log(v3)
+    console.log(vResultado)
     }
