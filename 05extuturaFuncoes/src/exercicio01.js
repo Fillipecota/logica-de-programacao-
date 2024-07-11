@@ -1,18 +1,18 @@
 import leia from "readline-sync"
 
-export function exercicio02(){
+export function exercicio01() {
 
-    function preencherVetor(tamanhoVetor,min, max){
+    function preencherVetor(tamanhoVetor, min, max) {
         var vetor = [];
-        for(var i=0; i< tamanhoVetor; i++){
-            vetor[i] =  parseInt(Math.random()* (max - min)) + min
+        for (var i = 0; i < tamanhoVetor; i++) {
+            vetor[i] = parseInt(Math.random() * (max - min)) + min
         }
         return vetor;
     }
 
-    function obterItensVetor(vetor,vResultado,min,max){
-        for(i=min; i<= max;i++){
-        vResultado[i] = vetor[i];
+    function obterItensVetor(vetor, vResultado, min, max) {
+        for (i = min; i <= max; i++) {
+            vResultado[i] = vetor[i];
         }
         return vResultado;
     }
@@ -29,4 +29,4 @@ export function exercicio02(){
     console.log(v2)
     console.log(v3)
     console.log(vResultado)
-    }
+}
