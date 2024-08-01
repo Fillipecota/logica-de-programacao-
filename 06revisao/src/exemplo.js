@@ -46,3 +46,23 @@ function preencherVetor(tamanhoVetor, min, max) {
 
 var listaa = preencherVetor(10, 50, 200)
 console.log(listaa)
+
+
+
+var pessoa = []
+
+///////////////////////////////
+//// forma de adicionar em vetor//
+
+
+for (var i = 0; i < 3; i++) {
+    var nome = leia.question("INFORME O NOME: ");
+    var idade = leia.questionInt("INFORME A IDADE: ");
+
+    var obj = {
+        nome: nome,
+        idade: idade
+    };
+    pessoas.push(obj)
+}
+console.log(pessoas)
